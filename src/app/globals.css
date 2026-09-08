@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-color: #F7F7F2;
+  --primary-green: #173B32;
+  --muted-sage: #A9B8A5;
+  --text-charcoal: #171917;
+  --secondary-neutral: #E8E8DF;
+  --white: #FFFFFF;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg-color);
+  color: var(--text-charcoal);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-charcoal);
+  font-family: var(--font-manrope), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow-x: hidden;
+  selection-background-color: #173B32;
+  selection-color: #FFFFFF;
+}
+
+::selection {
+  background-color: #173B32;
+  color: #F7F7F2;
+}
+
+/* Subtle editorial scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F7F7F2;
+}
+::-webkit-scrollbar-thumb {
+  background: #DCE3DA;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A9B8A5;
+}
+
+/* Editorial Serif Headings */
+.font-serif-editorial {
+  font-family: var(--font-instrument-serif), 'Playfair Display', Georgia, serif;
+  font-feature-settings: "liga" 1, "kern" 1;
+}
+
+/* Understated focus states */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid #173B32;
+  outline-offset: 2px;
+}
+
+/* Fine-line editorial borders */
+.editorial-border {
+  border-color: #E8E8DF;
+}
+
+.editorial-divider {
+  height: 1px;
+  background-color: #E8E8DF;
+  width: 100%;
+}
