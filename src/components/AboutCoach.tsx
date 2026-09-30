@@ -22,7 +22,7 @@ export const AboutCoach: React.FC<AboutCoachProps> = ({ onOpenEnquiry }) => {
                 alt={siteData.images.coach.alt}
                 fill
                 sizes="(max-width: 1024px) 100vw, 40vw"
-                className="object-cover object-top grayscale-[15%] contrast-[1.03]"
+                className="object-cover object-top contrast-[1.02]"
               />
               <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-charcoal/60 to-transparent text-white">
                 <p className="text-xs font-medium tracking-wide">
@@ -33,23 +33,6 @@ export const AboutCoach: React.FC<AboutCoachProps> = ({ onOpenEnquiry }) => {
                 </p>
               </div>
             </div>
-
-            {/* Editable Stats / Credentials Placeholder Grid */}
-            <div className="mt-6 grid grid-cols-3 gap-3 border border-neutral-stone bg-white p-4">
-              {siteData.coach.stats.map((stat, i) => (
-                <div key={i} className="text-center">
-                  <div className="font-mono text-xs font-semibold text-primary-green tracking-tight">
-                    {stat.value}
-                  </div>
-                  <div className="text-[10px] uppercase tracking-wider text-charcoal/50 mt-1 font-medium">
-                    {stat.label}
-                  </div>
-                </div>
-              ))}
-            </div>
-            <p className="mt-2 text-[10px] text-charcoal/40 text-center italic">
-              * Credentials and metrics ready for personalized client onboarding updates
-            </p>
           </div>
 
           {/* Right: Personal Bio & Pillars */}

@@ -329,8 +329,8 @@ export const siteData: SiteConfig = {
       caption: "Nourishment rooted in simplicity and balance."
     },
     coach: {
-      url: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1200&auto=format&fit=crop",
-      alt: "Warm portrait of wellness coach in serene, natural daylight",
+      url: "/images/pratik.jpg",
+      alt: "Pratik - Independent Herbalife Wellness Coach",
       caption: "Pratik • Independent Herbalife Wellness Coach"
     },
     community: {
