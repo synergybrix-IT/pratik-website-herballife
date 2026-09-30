@@ -130,6 +130,15 @@ export const Footer: React.FC = () => {
           </div>
         </div>
       </div>
+      {/* Synergy Brix Branding Strip */}
+      <div
+        style={{ backgroundColor: "#0b2d3e" }}
+        className="mt-0 py-5 border-t border-white/5"
+      >
+        <p className="text-center text-[13px] tracking-wide font-light text-white/40">
+          Synergy Brix 2026. All rights reserved.
+        </p>
+      </div>
     </footer>
   );
 };
