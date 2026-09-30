@@ -23,6 +23,7 @@ export interface SiteConfig {
     emailPlaceholder: string;
     location: string;
     instagramHandle: string;
+    instagramUrl: string;
   };
   approach: {
     tagline: string;
@@ -141,11 +142,12 @@ export const siteData: SiteConfig = {
     ]
   },
   contact: {
-    whatsappNumber: "[WHATSAPP NUMBER]",
-    whatsappRawNumber: "", // empty placeholder - easy to fill e.g. "1234567890"
+    whatsappNumber: "+91 77740 02596",
+    whatsappRawNumber: "917774002596",
     emailPlaceholder: "hello@pratikwellness.com",
     location: "Available for Remote & 1-on-1 Coaching",
-    instagramHandle: "@pratik.wellness"
+    instagramHandle: "@pratik_yadav_2596",
+    instagramUrl: "https://www.instagram.com/pratik_yadav_2596?stkn=eG85Yml1ZHhsNG1t"
   },
   approach: {
     tagline: "THE APPROACH",

@@ -54,9 +54,25 @@ export const CTASection: React.FC<CTASectionProps> = ({ onOpenEnquiry }) => {
           </a>
         </div>
 
-        {/* Contact Info Placeholder */}
-        <div className="mt-12 flex flex-wrap items-center justify-center gap-6 text-xs text-charcoal/50">
-          <span>WhatsApp: {siteData.contact.whatsappNumber}</span>
+        {/* Contact Info */}
+        <div className="mt-12 flex flex-wrap items-center justify-center gap-6 text-xs text-charcoal/60">
+          <a
+            href={directWaUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-charcoal transition-colors underline-offset-4 hover:underline"
+          >
+            WhatsApp: {siteData.contact.whatsappNumber}
+          </a>
+          <span>•</span>
+          <a
+            href={siteData.contact.instagramUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-charcoal transition-colors underline-offset-4 hover:underline"
+          >
+            Instagram: {siteData.contact.instagramHandle}
+          </a>
           <span>•</span>
           <span>{siteData.contact.location}</span>
         </div>

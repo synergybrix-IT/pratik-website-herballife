@@ -85,18 +85,32 @@ export const Footer: React.FC = () => {
               Direct Contact
             </p>
             <div className="space-y-3 text-xs text-white/70">
-              <p>
+              <div>
                 <span className="text-white/40 block text-[10px] uppercase tracking-wider">WhatsApp</span>
-                <span>{siteData.contact.whatsappNumber}</span>
-              </p>
-              <p>
+                <a
+                  href={`https://wa.me/${siteData.contact.whatsappRawNumber}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors inline-block mt-0.5"
+                >
+                  {siteData.contact.whatsappNumber}
+                </a>
+              </div>
+              <div>
                 <span className="text-white/40 block text-[10px] uppercase tracking-wider">Instagram</span>
-                <span>{siteData.contact.instagramHandle}</span>
-              </p>
-              <p>
+                <a
+                  href={siteData.contact.instagramUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors inline-block mt-0.5"
+                >
+                  {siteData.contact.instagramHandle}
+                </a>
+              </div>
+              <div>
                 <span className="text-white/40 block text-[10px] uppercase tracking-wider">Availability</span>
-                <span>{siteData.contact.location}</span>
-              </p>
+                <span className="inline-block mt-0.5">{siteData.contact.location}</span>
+              </div>
             </div>
           </div>
         </div>
